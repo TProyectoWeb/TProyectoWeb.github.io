@@ -1,0 +1,81 @@
+<!--
+Realizar en programa en HTML en el cual van solicitar:
+Boleta
+Nombre
+Grupo
+Materia
+Fecha
+Y vía un  botón de enviar. Hay que mostrar lo capturado
+-->
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>GITHUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Enlace a GITHUB</h1>
+    </header>
+    <form id="forma" action="javascript:procesa()">
+      <p><em>El borde azul indica obligatorio.</em></p>
+      <p>
+        <label accesskey="E">
+          Boleta:<br>
+          <input name="boleta" type="number" autofocus required
+                min="1111111111" max="999999999" step="1">
+        </label>
+        <br><em>Digite su boleta</em>
+      </p>
+      <p>
+        <label accesskey="R">
+          Nombre:<br>
+          <input name="nombre" type="text" autofocus required>
+        </label>
+        <br><em>Digite su nombre.</em>
+        <br><output id="salidanombre"></output>
+      </p>
+      <p>
+        <label accesskey="R">
+          Grupo:<br>
+          <input name="grupo" type="text" autofocus required>
+        </label>
+        <br><em>Digite su grupo.</em>
+        <br><output id="salidagrupo"></output>
+      </p>
+      <p>
+        <label accesskey="R">
+          Materia:<br>
+          <input name="materia" type="text" autofocus required>
+        </label>
+        <br><em>Digite la materia.</em>
+        <br><output id="salidamataria"></output>
+      </p>
+      <p>
+        <label accesskey="R">
+          Fecha:<br>
+          <input name="entero2" type="date" autofocus required>
+        </label>
+        <br><em>Selecciones la fecha actual</em>
+        <br><output id="salidafecha"></output>
+      </p>
+      <p><input type="submit" value="Enviar" accesskey="P"></p>
+      <br>
+      <output id="salidaBoleta"></output>
+      <br>
+      <output id="salidaNombre"></output>
+      <br>
+      <output id="salidaGrupo"></output>
+      <br>
+      <output id="salidaMateria"></output>
+      <br>
+      <output id="salidaFecha"></output>
+    </form>
+    <footer>
+      Copyright 2021 Orta Domínguez Tristán Eduardo
+    </footer>
+    <script src="JS/CtrlProc.js"></script>
+  </body>
+</html>
